@@ -2,12 +2,12 @@ Money = 54
 Bank = 1000
 Monster = 22
 Cookies = 32
-Slave = 110
+Pizza = 110
 Is = 15
 Kjøping = True
 
 def Overføring(Money, Bank):
-    print("Broke Nigga")
+    print("Broke individual ")
     Overføring = str(input("Vil du overføre penger? ")).lower()
     if "ja" in Overføring:
         print("Du har",Bank,"i banken") 
@@ -20,17 +20,13 @@ def Overføring(Money, Bank):
                     print("Du har", Money,"penger")
                 break
             except:
-                print("Mongo, ta ut penger med tall.")
+                print("Tulling, ta ut penger med tall.")
 
 def CoopPrix(Vare):
     
-
-    
-
 while Kjøping:
 
     kjøp = str(input("Hva vil du ha i dag? ")).lower()
-
 
     if "monster" in kjøp and "cookies" in kjøp and "is" in kjøp:
         if Money < Monster + Cookies + Is:
@@ -72,12 +68,12 @@ while Kjøping:
             print(Money, "Penger igjen")
 
 
-    elif "slave" in kjøp:
-        if Money < Slave:
+    elif "Pizza" in kjøp:
+        if Money < Pizza:
             Overføring(Money,Bank)
         else:
-            Money = Money - Slave
-            print("Du kjøper Slave")
+            Money = Money - Pizza
+            print("Du kjøper Pizza")
             print(Money, "Penger igjen")
         
     else:
